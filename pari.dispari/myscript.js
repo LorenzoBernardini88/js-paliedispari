@@ -7,16 +7,35 @@ function SommaNum(numUser, numPc){
 }
 
 let parolaUser = prompt('Pari o Dispari?');
-let numUser = parseInt(prompt('Scegli un compreso tra 1 e 5'));
-let numPc = Math.floor(Math.random()*5 + 1);
+let numPc;
+let numUser;
+let somma = 0 ;
 
-let somma = SommaNum(numUser, numPc);
 
-// console.log(numUser);
-// console.log(numPc);
-// console.log(somma);
+if((parolaUser == 'Pari')||(parolaUser =='Dispari')){
+    numUser = parseInt(prompt('Scegli un numero compreso tra 1 e 5'));
+    numPc = Math.floor(Math.random()*5 + 1);
+    somma = SommaNum(numUser, numPc);
 
-if(somma%2 == 0){
-
-    console.log('')
+    console.log(numUser);
+    console.log(numPc);
+    console.log(somma);
+    
+    if(somma%2 == 0){
+        
+        console.log('HAI VINTO!');
+    
+    }else{
+    
+        console.log('HAI PERSO');
+    }
+        
+}else {
+    console.log('ERRORE');
 }
+
+
+
+
+
+    
