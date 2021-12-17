@@ -12,7 +12,7 @@ let numUser;
 let somma = 0 ;
 
 
-if((parolaUser == 'Pari')||(parolaUser =='Dispari')){
+if((parolaUser == 'Pari', 'pari', 'PARI')||(parolaUser =='Dispari', 'dispari', 'DISPARI')){
     numUser = parseInt(prompt('Scegli un numero compreso tra 1 e 5'));
     numPc = Math.floor(Math.random()*5 + 1);
     somma = SommaNum(numUser, numPc);
@@ -21,7 +21,7 @@ if((parolaUser == 'Pari')||(parolaUser =='Dispari')){
     console.log(numPc);
     console.log(somma);
     
-    if((parolaUser == 'Pari')&&(somma%2 == 0)){
+    if((parolaUser == 'Pari', 'pari', 'PARI')&&(somma%2 == 0)){
         
         console.log('HAI VINTO!');
     
