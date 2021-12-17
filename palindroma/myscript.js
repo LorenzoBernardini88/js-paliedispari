@@ -4,4 +4,12 @@
 
 //Svolgimento : 
 
+function palindCheck (parolaUser){
+
+
+
+
+}
+
+
 let parolaUser = prompt('Inserisci un Parola');
