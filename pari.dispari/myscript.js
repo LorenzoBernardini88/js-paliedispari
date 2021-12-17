@@ -34,7 +34,7 @@ if((parolaUser == 'Pari')||(parolaUser =='Dispari')){
     }
         
 }else {
-    console.log('ERRORE,INSERISCI "Pari" o "Dispari"');
+    console.log('ERRORE!!! INSERISCI "Pari" o "Dispari"');
 }
 
 
