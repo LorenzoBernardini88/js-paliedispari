@@ -24,13 +24,17 @@ if((parolaUser == 'Pari')||(parolaUser =='Dispari')){
         
         console.log('HAI VINTO!');
     
-    }else{
+    }else if((parolaUser == 'Dispari')&&(somma%2 != 0)){
+        
+        console.log('HAI VINTO');
     
+    }else{
+
         console.log('HAI PERSO');
     }
         
 }else {
-    console.log('ERRORE');
+    console.log('ERRORE,INSERISCI "Pari" o "Dispari"');
 }
 
 
