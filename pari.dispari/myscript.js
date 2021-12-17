@@ -21,7 +21,7 @@ if((parolaUser == 'Pari')||(parolaUser =='Dispari')){
     console.log(numPc);
     console.log(somma);
     
-    if(somma%2 == 0){
+    if((parolaUser == 'Pari')&&(somma%2 == 0)){
         
         console.log('HAI VINTO!');
     
