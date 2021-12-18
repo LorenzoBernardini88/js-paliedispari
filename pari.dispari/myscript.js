@@ -11,7 +11,7 @@
 function SommaNum(){
 
     numRandom = Math.floor(Math.random()*5 + 1);
-    let risultato = numUser + numPc;
+    let risultato = numUser + numRandom;
 
     return risultato; 
 }
@@ -30,9 +30,9 @@ if((parolaUser == 'Pari')||(parolaUser =='Dispari')){ //condizione necessaria af
         
         somma = SommaNum();
         numComp = numRandom;
-        console.log(numUser);
-        console.log(numComp);
-        console.log(somma);
+        console.log('NUMERO UTENTE:'+" "+ numUser);
+        console.log('NUMERO PC:'+" "+ numComp);
+        console.log('SOMMA:'+" "+ somma);
         
         //Svolgimento del gioco.
         if((parolaUser == 'Pari')&&(somma%2 == 0)){ // Condinzione Vittoria Utente Pari.
